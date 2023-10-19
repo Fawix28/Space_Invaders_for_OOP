@@ -8,7 +8,7 @@ import sys
 def start_game():
     pygame.init()
     screen = pygame.display.set_mode((1000, 800))
-    pygame.display.set_caption("SpaxeX by Pushkova")
+    pygame.display.set_caption("Space wars")
 
     flag = True
     while flag:
@@ -16,6 +16,7 @@ def start_game():
             if event.type == pygame.QUIT:
                 sys.exit()
 
+        maincharacter.output()
         pygame.display.flip()
 
 
