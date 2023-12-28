@@ -2,31 +2,27 @@ import math
 import random
 
 import pygame
-from pygame import mixer
+from pygame 
 
 pygame.init()
 
 screen = pygame.display.set_mode((800, 600))
 
-# Фон
+# Установка фона
 background = pygame.image.load('fon.jpg')
 
-# Звук
-mixer.music.load("background.wav")
-mixer.music.play(-1)
-
-# Название и иконка
+# Название иконка 
 pygame.display.set_caption("Space Invaders")
 icon = pygame.image.load('ufo.png')
 pygame.display.set_icon(icon)
 
-# Игрок
+# Главный герой 
 playerImg = pygame.image.load('hero.png')
 playerX = 370
 playerY = 480
 playerX_change = 0
 
-# Враги
+# Мобы
 enemyImg = []
 enemyX = []
 enemyY = []
